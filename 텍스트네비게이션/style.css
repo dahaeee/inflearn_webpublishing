@@ -30,14 +30,28 @@ a {
     line-height: 30px;
     text-align: center;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-
-.gnb a:before {
-    content: attr(data-link);
+.gnb a:before, 
+.gnb a:after {
     position: absolute;
+    content: attr(data-link);
     width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.gnb a:before {
     top: 0;
     left: 0;
-    text-align: center;
+}
+.gnb a:after {
+    top: 100%;
+    left: 0;
+    color: #45B649;
+}
+.gnb a:hover:before {
+    top: -100%;
+}
+.gnb a:hover:after {
+    top: 0;
 }
