@@ -1,0 +1,22 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
+
+
+body {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    line-height: 1.5em;
+    margin: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
