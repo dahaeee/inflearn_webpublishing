@@ -1,0 +1,159 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.tab-inner {
+
+}
+
+.input[name=tabmenu] {
+    display: none;
+}
+
+.tabs {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.items {
+    /* border: 1px solid red; */
+    height: 100vh;
+    width: 300%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.items div {
+    /* border: 1px solid blue; */
+    height: 100vh;
+    float: left;
+    width: 33.33333%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.items div:nth-child(1) {
+    background: url(images/photo-01.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.items div:nth-child(2) {
+    background: url(images/photo-02.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.items div:nth-child(3) {
+    background: url(images/photo-03.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.items div:nth-child(1):before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(135deg, rgb(158, 135, 7), transparent);
+    width: 100%;
+    height: 100%;
+}
+
+.items div:nth-child(2):before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(135deg, rgb(96, 88, 128), transparent);
+    width: 100%;
+    height: 100%;
+}
+
+.items div:nth-child(3):before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(135deg, rgb(83, 141, 97), transparent);
+    width: 100%;
+    height: 100%;
+}
+
+.items div h1 {
+    font-size: 120px;
+    font-weight: normal;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.368);
+}
+
+.btn label {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 15px;
+    
+}
+
+input[id=tab1]:checked ~ .tabs .items {
+    left: 0;
+}
+
+input[id=tab2]:checked ~ .tabs .items {
+    left: -100%;
+}
+
+input[id=tab3]:checked ~ .tabs .items {
+    left: -200%;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+    color: crimson;
+}
+
+input[id=tab1]:checked ~ .tabs .items div h1:nth-child(1) {
+    transform: translateY(200px);
+    opacity: 1;
+}
+
+input[id=tab2]:checked ~ .tabs .items div h1:nth-child(2) {
+    transform: translateY(200px);
+    opacity: 1;
+}
+
+input[id=tab3]:checked ~ .tabs .items div h1:nth-child(3) {
+    transform: translateY(200px);
+    opacity: 1;
+}
