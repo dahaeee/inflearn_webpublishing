@@ -1,0 +1,64 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.custom input[type=checkbox] {
+    display: none;
+}
+
+.custom label em {
+    /* border: 1px solid #000; */
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(images/checkbox-02.png) no-repeat;
+    background-position: left center;
+}
+
+.custom input[type=checkbox]:checked + label em {
+    background-position: right center;
+}
+
+.grade input[type=radio] {
+    display: none;
+}
+
+.grade label {
+    cursor: pointer;
+}
+
+.grade label em {
+    /* border: 1px solid #000; */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(images/radio-01.png)no-repeat;
+    background-position: left center;
+}
+
+.grade input[type=radio]:checked + label em {
+    background-position: right center;
+}
+
+.grade input[type=radio]:checked + label {
+    color: crimson;
+}
