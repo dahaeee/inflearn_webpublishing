@@ -1,0 +1,55 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;;
+}
+
+section {
+    /* border: 1px solid #000; */
+    width: 800px;
+}
+
+.btn {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.btn li {
+    float: left;
+    border: 1px solid #000;
+    background-color: gray;
+}
+
+.btn li.active {
+    background-color: #fff;
+}
+
+.tabs {
+
+}
+
+.tabs div {
+    border: 1px solid #000;
+    height: 200px;
+    display: none;
+}
+
+.tabs div.active {
+    display: block;
+}
