@@ -1,0 +1,200 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* item */
+.item {
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.149);
+}
+
+.item img {
+    transition: 0.5s;
+}
+
+.detail {
+    background-color: #f8f8f8;
+    position: absolute;
+    width: 100%;
+    bottom: -178px;
+    left: 0;
+    height: 250px;
+    transition: 0.5s;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.item:hover .detail {
+    bottom: 0;
+}
+
+.item:hover img {
+    filter: blur(2px);
+}
+
+/* title */
+.title {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.title h2 {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.2em;
+    float: left;
+}
+
+.title h2 em {
+    font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.title span {
+    float: right;
+    margin-top: 15px;
+    font-size: 18px;
+    color: crimson;
+}
+
+.info {
+    position: relative;
+}
+
+/* size */
+.size {
+    margin-bottom: 10px;
+}
+
+.size label,
+.color label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.size span {
+    font-size: 12px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.size span.active,
+.size span:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* color */
+
+.color span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.color span.active {
+    border: 2px solid #000;
+}
+
+.color span:nth-of-type(1) {
+    background-color: #808000;
+}
+
+.color span:nth-of-type(2) {
+    background-color: #ff0000;
+}
+
+.color span:nth-of-type(3) {
+    background-color: #ffc0cb;
+}
+
+.color span:nth-of-type(4) {
+    background-color: #00ffff;
+}
+
+.color span:nth-of-type(5) {
+    background-color: #0000ff;
+}
+
+button.add-cart {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 7px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-cart:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* like */
+.like {
+    cursor: pointer;
+}
+
+.like:before {
+    content: '\f08a';
+    font-family: fontawesome;
+    color: #bbb;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.2s;
+}
+
+.like.active:before {
+    content: '\f004';
+    color: crimson;
+    transition: 0.2s;
+}
