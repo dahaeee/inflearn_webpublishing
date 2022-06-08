@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .modal {
@@ -30,8 +31,12 @@ a {
     top: 0;
     left: 0;
     height: 100vh;
-    display: inline-block;
+    display: none;
     width: 100%;
+}
+
+.modal.active {
+    display: block;
 }
 
 .modal-content {
@@ -45,6 +50,7 @@ a {
     padding: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     text-align: center;
+    animation: slidefade 0.3s linear;
 }
 
 .btn-close {
@@ -60,4 +66,15 @@ a {
     font-size: 14px;
     padding: 7px;
     display: block;
+}
+
+@keyframes slidefade {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
 }
