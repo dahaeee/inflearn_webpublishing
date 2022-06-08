@@ -34,7 +34,7 @@ header {
     background-color: #fff;
     height: 60px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 13px;
     box-sizing: border-box;
 }
 
@@ -100,16 +100,44 @@ section {
 }
 
 .or-text {
-
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
 }
+
+.or-text:before {
+    content: '';
+    background-color: lightgray;
+    height: 1px;
+    width: 44%;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.or-text:after {
+    content: '';
+    background-color: lightgray;
+    height: 1px;
+    width: 44%;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
 .login-footer {
 
 }
 
 .login-footer p {
-
+    text-align: center;
 }
 
 .login-footer p a {
+    font-weight: normal;
+}
 
+.login-footer p a:hover {
+    text-decoration: underline;
 }
