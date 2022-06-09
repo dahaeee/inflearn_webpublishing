@@ -25,3 +25,4 @@ $('.btn-close').click(function(){
 // function closeModal() {
 //     modal.classList.remove('active');
 // }
+
